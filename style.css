@@ -1,0 +1,33 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f9f9f9;
+    color: #222;
+  }
+  
+  .navbar {
+    background-color: #0d1b2a !important;
+  }
+  
+  .hero {
+    background-color: #1b263b;
+  }
+  
+  h1, h2, h3 {
+    color: #003366;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  footer {
+    background-color: #1b263b;
+  }
+  
+  .card {
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  
