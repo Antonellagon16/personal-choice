@@ -1,33 +1,183 @@
+/* General Body Styling */
 body {
-    font-family: 'Segoe UI', sans-serif;
-    background-color: #f9f9f9;
-    color: #222;
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar Styling */
+.navbar {
+  background-color: #1c3d5a; /* Dark Blue */
+}
+
+.navbar .navbar-brand {
+  color: #f4b400; /* Bright Yellow */
+  font-size: 1.8em;
+}
+
+.navbar .nav-link {
+  color: #f4b400 !important; /* Yellow */
+  font-weight: bold;
+}
+
+.navbar .nav-link:hover {
+  color: #ffffff !important;
+  background-color: #1c3d5a;
+}
+
+/* Hero Section */
+.hero-section {
+  background-color: #1c3d5a; /* Dark Blue */
+  color: #ffffff;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.hero-section h1 {
+  font-size: 3.5em;
+  margin-bottom: 20px;
+}
+
+.hero-section p {
+  font-size: 1.3em;
+}
+
+/* Card Styling for Team Section */
+.card {
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border: none;
+}
+
+.card-body {
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #1c3d5a;
+}
+
+.card-text {
+  font-size: 1.1em;
+  color: #666;
+}
+
+.card img {
+  border-radius: 10px;
+  max-height: 200px;
+  object-fit: cover;
+}
+
+/* Footer Styling */
+footer {
+  background-color: #1c3d5a;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+}
+
+footer a {
+  color: #f4b400;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* Button Styling */
+.btn-primary {
+  background-color: #f4b400; /* Yellow */
+  border-color: #f4b400;
+  color: #1c3d5a;
+  font-weight: bold;
+  border-radius: 50px;
+  padding: 10px 20px;
+}
+
+.btn-primary:hover {
+  background-color: #f0a500;
+  border-color: #f0a500;
+  color: #ffffff;
+}
+
+/* Highlight Section */
+.highlight-section {
+  background-color: #ffffff;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.highlight-section h2 {
+  font-size: 2.5em;
+  color: #1c3d5a;
+  margin-bottom: 20px;
+}
+
+.highlight-section .highlight-card {
+  margin-bottom: 30px;
+}
+
+.highlight-section .highlight-card img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.highlight-section .highlight-card .card-body {
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+.highlight-section .highlight-card .card-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #1c3d5a;
+}
+
+/* Interactive Hover Effects */
+.card:hover {
+  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+.card-title:hover {
+  color: #f4b400; /* Yellow */
+}
+
+.highlight-section .highlight-card:hover {
+  background-color: #1c3d5a;
+  color: #ffffff;
+}
+
+.highlight-section .highlight-card:hover .card-title {
+  color: #f4b400; /* Yellow */
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 767px) {
+  .hero-section h1 {
+      font-size: 2.5em;
   }
-  
-  .navbar {
-    background-color: #0d1b2a !important;
+
+  .navbar .navbar-brand {
+      font-size: 1.5em;
   }
-  
-  .hero {
-    background-color: #1b263b;
-  }
-  
-  h1, h2, h3 {
-    color: #003366;
-  }
-  
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-  
-  footer {
-    background-color: #1b263b;
-  }
-  
+
   .card {
-    border: none;
-    border-radius: 1rem;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
   }
-  
+
+  .highlight-section h2 {
+      font-size: 2em;
+  }
+
+  .highlight-section .highlight-card .card-body {
+      padding: 15px;
+  }
+}
