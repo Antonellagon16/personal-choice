@@ -1,8 +1,16 @@
-// Example: Show favorite wrestler on form submit (can be expanded later)
-function showFavorite() {
-    const name = document.getElementById("wrestlerInput").value;
-    if (name.trim() === "") {
-      alert("Please enter a name.");
-    } else {
-      document.getElementById("favoriteDisplay").innerText = `You
-  
+function submitFavorite() {
+  const name = document.getElementById("favoriteWrestler").value;
+  const result = document.getElementById("voteResult");
+
+  result.innerText = `💙 Thanks for supporting ${name}!`;
+  result.classList.remove("show");
+  void result.offsetWidth; // Reflow to restart animation
+  result.classList.add("show");
+}
+
+function resetVote() {
+  document.getElementById("favoriteWrestler").selectedIndex = 0;
+  const result = document.getElementById("voteResult");
+  result.innerText = "";
+  result.classList.remove("show");
+}

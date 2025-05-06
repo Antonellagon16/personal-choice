@@ -30,7 +30,20 @@
         <p>The girls dominated the home opener with energy and precision, setting a strong tone for the season.</p>
       </div>
     </div>
-    <!-- More highlights -->
+    <h2>Vote for Your Favorite Wrestler 🏆</h2>
+
+  <div class="d-flex flex-column align-items-center">
+    <select id="favoriteWrestler" class="form-select w-50 mb-2">
+      <option disabled selected>Select your favorite wrestler</option>
+      <option value="Nola Allen">Nola Allen</option>
+      <option value="Kira Fisher">Kira Fisher</option>
+      <option value="Rodaina Elshafey">Rodaina Elshafey</option>
+    </select>
+    
+    <div>
+      <button onclick="submitFavorite()" class="btn btn-primary">Submit</button>
+      <button onclick="resetVote()" class="btn btn-secondary ms-2">Reset</button>
+    </div>
   </section>
 
   <footer class="text-center py-4 bg-dark text-white">
