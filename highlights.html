@@ -1,35 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Season Highlights</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
-  <link rel="stylesheet" href="styles.css"/>
-</head>
-<body>
-
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4">
-    <a class="navbar-brand" href="index.html">Marlboro Wrestling</a>
-    <div class="collapse navbar-collapse">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="team.html">Meet the Team</a></li>
-        <li class="nav-item"><a class="nav-link" href="accomplishments.html">Accomplishments</a></li>
-      </ul>
-    </div>
-  </nav>
-
-  <section class="container py-5">
-    <h2 class="mb-4">Season Highlights</h2>
-    <div id="highlightContainer" class="row g-4">
-      <!-- JavaScript will populate highlights -->
-    </div>
-  </section>
-
-  <footer class="text-center py-4 bg-dark text-white">
-    &copy; 2025 Marlboro Girls Wrestling Team
-  </footer>
-
-  <script src="script.js"></script>
-</body>
-</html>
+ <html lang="en">
+ <head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Season Highlights</title>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+   <link rel="stylesheet" href="styles.css" />
+ </head>
+ <body>
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4">
+     <a class="navbar-brand" href="index.html">Marlboro Wrestling</a>
+     <div class="collapse navbar-collapse">
+       <ul class="navbar-nav ms-auto">
+         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+         <li class="nav-item"><a class="nav-link" href="team.html">Meet the Team</a></li>
+         <li class="nav-item"><a class="nav-link" href="accomplishments.html">Accomplishments</a></li>
+       </ul>
+     </div>
+   </nav>
+ 
+   <section class="container py-5">
+     <h2 class="mb-4">Key Matches & Moments</h2>
+     <div class="row mb-4 align-items-center">
+       <div class="col-md-6">
+         <img src="https://via.placeholder.com/500x300" class="img-fluid rounded shadow" alt="AI image of a match" />
+       </div>
+       <div class="col-md-6">
+         <h4>Home Opener Victory</h4>
+         <p>The girls dominated the home opener with energy and precision, setting a strong tone for the season.</p>
+       </div>
+     </div>
+     <!-- More highlights -->
+     <h2>Vote for Your Favorite Wrestler 🏆</h2>
+ 
+   <div class="d-flex flex-column align-items-center">
+     <select id="favoriteWrestler" class="form-select w-50 mb-2">
+       <option disabled selected>Select your favorite wrestler</option>
+       <option value="Nola Allen">Nola Allen</option>
+       <option value="Kira Fisher">Kira Fisher</option>
+       <option value="Rodaina Elshafey">Rodaina Elshafey</option>
+     </select>
+     
+     <div>
+       <button onclick="submitFavorite()" class="btn btn-primary">Submit</button>
+       <button onclick="resetVote()" class="btn btn-secondary ms-2">Reset</button>
+     </div>
+   </section>
+ 
+   <footer class="text-center py-4 bg-dark text-white">
+     &copy; 2025 Marlboro Girls Wrestling Team
+   </footer>
+ 
+   <script src="script.js"></script>
+ </body>
+ </html>
