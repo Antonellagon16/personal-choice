@@ -4,39 +4,62 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Team Accomplishments</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="https://use.typekit.net/xwb6mbg.css">
+    <title>Accomplishments – Marlboro Girls Wrestling</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4">
-        <a class="navbar-brand" href="index.html">Marlboro Wrestling</a>
-        <div class="collapse navbar-collapse">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="team.html">Meet the Team</a></li>
-                <li class="nav-item"><a class="nav-link" href="highlights.html">Season Highlights</a></li>
-            </ul>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Marlboro Wrestling</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+                aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="team.html">Team</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="accomplishments.html">Accomplishments</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
 
+    <!-- Accomplishments Section -->
     <section class="container py-5">
-        <h2 class="mb-4">Accomplishments</h2>
+        <h2 class="text-center mb-5">Team Accomplishments</h2>
         <ul class="list-group">
-            <li class="list-group-item">Nola Allen takes 2nd in regions</li>
-            <li class="list-group-item">Nola Allen takes 4th in the state</li>
-            <li class="list-group-item">Kira Fisher takes 5h in the region</li>
-            <li class="list-group-item">Nola Allen and Sidney Kocur take 1st in the Lady Panther Tournament</li>
+            <li class="list-group-item accomplishment-item mb-4">
+                <h5>Nola Allen takes 2nd in Regions</h5>
+                <img src="imgs/regions.png" alt="Nola Allen placing 2nd in regions" class="img-fluid rounded mt-2" />
+            </li>
+            <li class="list-group-item accomplishment-item mb-4">
+                <h5>Nola Allen takes 4th in the State</h5>
+                <img src="imgs/states.png" alt="Nola Allen placing 4th in state" class="img-fluid rounded mt-2" />
+            </li>
+            <li class="list-group-item accomplishment-item mb-4">
+                <h5>Kira Fisher takes 5th in the Region</h5>
+                <img src="https://via.placeholder.com/500x300?text=Kira+5th+Region"
+                    alt="Kira Fisher placing 5th in region" class="img-fluid rounded mt-2" />
+            </li>
+            <li class="list-group-item accomplishment-item mb-4">
+                <h5>Nola Allen and Sidney Kocur take 1st in the Lady Panther Tournament</h5>
+                <img src="https://via.placeholder.com/500x300?text=Nola+%26+Sidney+1st+Lady+Panther"
+                    alt="Nola Allen and Sidney Kocur Lady Panther Tournament Champions"
+                    class="img-fluid rounded mt-2" />
+            </li>
         </ul>
     </section>
 
-    <footer class="text-center py-4 bg-dark text-white">
-        &copy; 2025 Marlboro Girls Wrestling Team
+    <!-- Footer -->
+    <footer class="text-center py-3 bg-light mt-4">
+        <small>&copy; 2025 Marlboro Girls Wrestling Team</small>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
