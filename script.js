@@ -14,11 +14,13 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // =================== Voting Game ===================
-const wrestlers = [
-  "Nola Allen", "Talia Shrayef", "Hannah Jang", "Larisa Avestiyan", "Lucianna Plantamura",
-  "Rodaina Elshafey", "Ashlee Chen", "Antonella Gonzalez", "Anye Mendez",
-  "Francesca Pignata", "Kira Fisher", "Sidney Kocur"
-];
+function getWrestlers() {
+  return [
+    "Nola Allen", "Talia Shrayef", "Hannah Jang", "Larisa Avestiyan", "Lucianna Plantamura",
+    "Rodaina Elshafey", "Ashlee Chen", "Antonella Gonzalez", "Anye Mendez",
+    "Francesca Pignata", "Kira Fisher", "Sidney Kocur"
+  ];
+}
 
 function loadVotes() {
   return JSON.parse(localStorage.getItem("wrestlerVotes")) || {};
@@ -45,7 +47,7 @@ function displayVoteResults() {
   const total = Object.values(votes).reduce((a, b) => a + b, 0);
 
   let html = "<ul class='list-group'>";
-  wrestlers.forEach(w => {
+  getWrestlers().forEach(w => {
     const count = votes[w] || 0;
     const percentage = total ? ((count / total) * 100).toFixed(1) : 0;
     html += `<li class='list-group-item d-flex justify-content-between align-items-center'>
@@ -57,18 +59,23 @@ function displayVoteResults() {
   results.innerHTML = html;
 }
 
-document.addEventListener("DOMContentLoaded", () => {
+function populateWrestlerSelect() {
   const select = document.getElementById("wrestlerSelect");
-  if (select) {
-    wrestlers.forEach(name => {
-      const option = document.createElement("option");
-      option.value = name;
-      option.textContent = name;
-      select.appendChild(option);
-    });
-    displayVoteResults();
-  }
-});
+  if (!select) return;
+
+  getWrestlers().forEach(name => {
+    const option = document.createElement("option");
+    option.value = name;
+    option.textContent = name;
+    select.appendChild(option);
+  });
+}
+
+function initializeWrestlerVoting() {
+  populateWrestlerSelect();
+  displayVoteResults();
+}
+document.addEventListener("DOMContentLoaded", initializeWrestlerVoting);
 
 // =================== Team Page Cards ===================
 const wrestlerData = [

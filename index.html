@@ -7,11 +7,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Marlboro Girls Wrestling 2024-25</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 
 <body>
+  <h1 class="hero-title">Girls Marlboro Mustangs</h1>
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
@@ -44,24 +45,29 @@
     <h3>Vote for Your Favorite Wrestler</h3>
     <div id="wrestler-vote">
       <div class="row mb-3">
-        <div class="col-md-4"><button class="wrestler-btn" onclick="vote('Nola Allen')">Nola Allen</button></div>
-        <div class="col-md-4"><button class="wrestler-btn" onclick="vote('Talia Shrayef')">Talia Shrayef</button></div>
-        <div class="col-md-4"><button class="wrestler-btn" onclick="vote('Hannah Jang')">Hannah Jang</button></div>
+        <div class="col-md-4"><button class="wrestler-btn" onclick="votes('Nola Allen')">Nola Allen</button></div>
+        <div class="col-md-4"><button class="wrestler-btn" onclick="votes('Talia Shrayef')">Talia Shrayef</button></div>
+        <div class="col-md-4"><button class="wrestler-btn" onclick="votes('Hannah Jang')">Hannah Jang</button></div>
       </div>
       <div class="row mb-3">
-        <div class="col-md-4"><button class="wrestler-btn" onclick="vote('Larisa Avestiyan')">Larisa Avestiyan</button></div>
-        <div class="col-md-4"><button class="wrestler-btn" onclick="vote('Lucianna Plantamura')">Lucianna Plantamura</button></div>
-        <div class="col-md-4"><button class="wrestler-btn" onclick="vote('Rodaina Elshafey')">Rodaina Elshafey</button></div>
+        <div class="col-md-4"><button class="wrestler-btn" onclick="votes('Larisa Avestiyan')">Larisa Avestiyan</button>
+        </div>
+        <div class="col-md-4"><button class="wrestler-btn" onclick="votes('Lucianna Plantamura')">Lucianna
+            Plantamura</button></div>
+        <div class="col-md-4"><button class="wrestler-btn" onclick="votes('Rodaina Elshafey')">Rodaina Elshafey</button>
+        </div>
       </div>
       <div class="row mb-3">
-        <div class="col-md-4"><button class="wrestler-btn" onclick="vote('Ashlee Chen')">Ashlee Chen</button></div>
-        <div class="col-md-4"><button class="wrestler-btn" onclick="vote('Antonella Gonzalez')">Antonella Gonzalez</button></div>
-        <div class="col-md-4"><button class="wrestler-btn" onclick="vote('Anye Mendez')">Anye Mendez</button></div>
+        <div class="col-md-4"><button class="wrestler-btn" onclick="votes('Ashlee Chen')">Ashlee Chen</button></div>
+        <div class="col-md-4"><button class="wrestler-btn" onclick="votes('Antonella Gonzalez')">Antonella
+            Gonzalez</button></div>
+        <div class="col-md-4"><button class="wrestler-btn" onclick="votes('Anye Mendez')">Anye Mendez</button></div>
       </div>
       <div class="row mb-3">
-        <div class="col-md-4"><button class="wrestler-btn" onclick="vote('Francesca Pignata')">Francesca Pignata</button></div>
-        <div class="col-md-4"><button class="wrestler-btn" onclick="vote('Kira Fisher')">Kira Fisher</button></div>
-        <div class="col-md-4"><button class="wrestler-btn" onclick="vote('Sidney Kocur')">Sidney Kocur</button></div>
+        <div class="col-md-4"><button class="wrestler-btn" onclick="votes('Francesca Pignata')">Francesca
+            Pignata</button></div>
+        <div class="col-md-4"><button class="wrestler-btn" onclick="votes('Kira Fisher')">Kira Fisher</button></div>
+        <div class="col-md-4"><button class="wrestler-btn" onclick="votes('Sidney Kocur')">Sidney Kocur</button></div>
       </div>
     </div>
 
@@ -86,7 +92,7 @@
     <p>&copy; 2025 Marlboro Girls Wrestling</p>
   </footer>
 
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 
 
