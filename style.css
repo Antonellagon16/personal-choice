@@ -1,104 +1,132 @@
-
-
+/* General Styling */
 body {
-  background-color: #fff;
-  font-family: 'Segoe UI', sans-serif;
-  color: #1c3d5a;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5faff;
+  color: #003366;
 }
 
-.hero {
-  background: linear-gradient(to right, #1c3d5a, #ffd700);
-  color: white;
+h1, h2, h3, h4, h5 {
+  color: #002244;
 }
 
-h1, h2, h3, .card-title {
-  font-family: "Cofo Kabeltouw Solid", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  color: #1c3d5a;
+a {
+  color: #0047ab;
 }
 
+/* Navbar */
 .navbar {
-  background-color: #1c3d5a !important;
+  background-color: #002244;
 }
 
-.navbar .navbar-brand {
-  color: #ffd700 !important;
+.navbar-brand, .nav-link {
+  color: #f1c40f !important;
 }
 
-.navbar .nav-link {
-  color: #ffd700 !important;
+.nav-link:hover {
+  color: #ffdc00 !important;
 }
 
-.navbar .nav-link:hover {
-  color: #fff !important;
+/* Hero Section */
+.hero {
+  background: url('https://via.placeholder.com/1600x600?text=Marlboro+Girls+Wrestling') no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-shadow: 2px 2px #000;
+  flex-direction: column;
 }
 
-.card {
-  border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s ease-in-out;
+.hero-title {
+  font-size: 3rem;
+  font-weight: bold;
+  border-right: .15em solid yellow;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
-.card:hover {
-  transform: scale(1.03);
+/* Typing Animation */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: yellow }
 }
 
-.card-body {
-  background-color: #f9f9f9;
+.hero-title {
+  animation: blink-caret .75s step-end infinite;
+}
+
+/* Section Headers */
+section h2 {
+  border-bottom: 3px solid #f1c40f;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+/* Cards for Team Page */
+.wrestler-card {
+  border: 2px solid #0047ab;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #e3f2fd;
+}
+
+.wrestler-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  background-color: #fffbea;
 }
 
 .card-title {
-  font-weight: 600;
+  color: #0047ab;
 }
 
 .card-text {
-  color: #333;
+  font-size: 0.95rem;
 }
 
-.btn-primary {
-  background-color: #1c3d5a;
-  border-color: #1c3d5a;
+/* Voting Section */
+.vote-section {
+  margin-top: 3rem;
+  background-color: #e9f7ff;
+  padding: 2rem;
+  border-radius: 10px;
 }
 
-.btn-primary:hover {
-  background-color: #163049;
-  border-color: #163049;
-}
-
-.btn-secondary {
-  background-color: #ffd700;
-  color: #1c3d5a;
-  border: none;
-}
-
-.btn-secondary:hover {
-  background-color: #e6c200;
-  color: #1c3d5a;
-}
-
-footer {
-  background-color: #1c3d5a;
-  color: #ffd700;
-}
-
-select.form-select {
-  border: 2px solid #1c3d5a;
-}
-
-.list-group-item {
-  background-color: #fffbe6;
-  border-left: 4px solid #ffd700;
-  color: #1c3d5a;
+#voteResults ul li {
+  background-color: #fffbea;
+  color: #002244;
   font-weight: 500;
 }
 
-@media (max-width: 768px) {
-  .hero-section h1 {
-    font-size: 2rem;
-  }
+/* Accomplishments Page */
+.accomplishment-item {
+  position: relative;
+  transition: background 0.3s ease;
+  cursor: pointer;
+}
 
-  .hero-section p {
-    font-size: 1rem;
-  }
+.accomplishment-item:hover {
+  background-color: #fffac1;
+}
+
+.accomplishment-image {
+  display: none;
+  max-width: 100%;
+  margin-top: 10px;
+  border: 3px solid #f1c40f;
+  border-radius: 8px;
+}
+
+.accomplishment-item:hover .accomplishment-image {
+  display: block;
+}
+
+/* Footer */
+footer {
+  background-color: #002244;
+  color: #f1c40f;
+  padding: 1rem 0;
+  text-align: center;
 }
